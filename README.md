@@ -1,36 +1,36 @@
 # Campus Course & Records Manager (CCRM)
 
-Welcome to CCRM! This project is a comprehensive, console-based tool built with Java SE for managing students, courses, and academic records at an educational institute. It's a demonstration of modern Java development principles, showcasing everything from object-oriented design to advanced file I/O with NIO.2.
+Welcome to CCRM! This is a complete, console-based Java SE application that manages the academic records, courses, and students of an educational institution. It's an example of leading-edge Java development practices, demonstrating everything from object-oriented design through to sophisticated file I/O using NIO.2.
 
 ---
 
 ## Getting Started
 
-Ready to run the application? Here’s how.
+Ready to run the application? Here's how.
 
 ### Prerequisites
 
-- **Java Development Kit (JDK):** Version 17 or higher.
+- Java Development Kit (JDK): Version 17 or later.
 
 ### Installation & Execution
 
-1.  **Clone the repository:**
+1.  Clone the repository:
     ```bash
     git clone https://github.com/Abhinavmehra2004/java-ccrm.git
     cd java-ccrm
     ```
 
-2.  **Compile the code:** From the project's root directory, run the following command. This will compile all Java source files and place the `.class` files into the `out` directory.
+2.  Compile the code: Execute this command at the root folder of the project. This will compile all Java .java files and put the compiled .class files into the out folder.
     ```bash
     javac -d out $(find . -name "*.java")
     ```
 
-3.  **Run the application:**
+3.  Run the application:
     ```bash
     java -cp out edu.ccrm.cli.Main
     ```
 
-The CCRM menu will appear, and you can start exploring the features!
+The CCRM menu will show up, and you can begin to explore the features!
 
 ---
 
@@ -38,11 +38,11 @@ The CCRM menu will appear, and you can start exploring the features!
 
 ### Setup & Installation
 
-**JDK Installation Verification (`java -version`):**
+**JDK Installation Verification (java -version):**
 
 *Delete the incorrect screenshot below*
 ![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.35.09.png)
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.41.11.png)
+![Screenshot](screenshots/Screenshot%2025-09-23%20at%2017.41.11.png)
 
 **Eclipse IDE Project Setup & Run Configuration:**
 
@@ -82,48 +82,48 @@ The CCRM menu will appear, and you can start exploring the features!
 
 ## About the Technology: A Java Deep Dive
 
-This project was built entirely with Java SE. Here’s a quick look at the platform and concepts that power CCRM.
+Java SE was used to create the entire project. Below is a quick overview of the platform and concepts that motivate CCRM.
 
-### The Java Platform at a Glance
+### Java Platform Overview
 
--   **JVM (Java Virtual Machine):** The engine that runs the compiled Java code. It’s the magic that makes Java a "write once, run anywhere" language.
--   **JRE (Java Runtime Environment):** The full package needed to *run* Java applications. It bundles the JVM and the core Java libraries.
--   **JDK (Java Development Kit):** The complete toolkit for *building* Java applications. It includes the JRE and developer tools like the `javac` compiler.
+-   JVM (Java Virtual Machine): The run-time environment for the compiled Java code. It's the magic that turns Java into a "write once, run anywhere" technology.
+-   JRE (Java Runtime Environment): The whole package required to execute Java applications. It includes the JVM and the standard collection of Java libraries.
+-   JDK (Java Development Kit): The whole kit used to construct Java programs. It includes the JRE and development tools such as the javac compiler.
 
 ### Java Editions: SE, EE, and ME
 
-Java comes in different flavors for different needs. This project uses **Java SE (Standard Edition)**, the foundation for desktop and server applications. The other main editions are **Java EE (Enterprise Edition)** for large-scale business applications and **Java ME (Micro Edition)** for small and embedded devices.
+Java comes in different flavors according to needs.The other well-known ones are Java EE (Enterprise Edition) for business applications of large scale and Java ME (Micro Edition) for small devices and embedded devices.
 
 ---
 
 ## Code Tour: Where to Find Key Concepts
 
-This project was built to demonstrate a wide range of Java features. This table serves as a map to help you find where specific concepts are implemented in the source code.
+This project was built for the purpose of demonstrating a wide range of features of Java. This table serves as a navigation guide to direct you to where specific concepts are implemented in the source code.
 
 | Syllabus Topic | File / Class / Method Where Demonstrated |
-|----------------|------------------------------------------|
-| **Packages** | The entire project is organized into packages like `edu.ccrm.domain`, `edu.ccrm.service`, etc. |
-| **Loops (do-while, for-each)** | `Menu.java` (all `manage...` methods use `do-while`), `listStudents()` uses an enhanced-for loop. |
-| **Decision Structures (if, switch)** | `Menu.java` (all `handleUserInput` and `manage...` methods use `switch`), `ImportExportService.java` uses `if`. |
-| **Arrays & `String.split`** | `ImportExportService.java` uses `line.split(",")` to parse CSV files into a `String[]`. |
-| **Encapsulation** | All domain classes (`Student`, `Course`) have `private` fields with `public` getters/setters. |
-| **Inheritance (`extends`, `super`)** | `Student.java` and `Instructor.java` extend the abstract `Person.java` class, using `super()` in their constructors. |
-| **Abstraction (abstract class/method)** | `Person.java` is an abstract class with an abstract `getProfile()` method. |
-| **Polymorphism** | `Student` and `Instructor` objects can be treated as `Person` types. `getProfile()` is a polymorphic method call. |
-| **Immutability (`final` class/fields)** | `Name.java` and `CourseCode.java` are immutable value classes with `final` fields. |
-| **Static Nested Class** | `Course.Builder` is a static nested class inside `Course.java`. |
-| **Anonymous Inner Class** | `Menu.java` -> `listStudents()` uses an anonymous `java.util.Comparator` to sort students. |
-| **Interfaces** | `Persistable.java` and `Searchable.java` are interfaces implemented by services. |
-| **Enums with Constructors & Fields** | `Grade.java` is an enum with a `gradePoint` field and a constructor. |
-| **Functional Interfaces & Lambdas** | `Menu.java` -> `searchCourses()` uses lambda expressions (`c -> ...`) as predicates for filtering. |
-| **Design Pattern: Singleton** | `AppConfig.java` is implemented as a Singleton. |
-| **Design Pattern: Builder** | `Course.java` uses a static nested `Builder` class for object construction. |
-| **Custom Exceptions** | `DuplicateEnrollmentException.java`, `MaxCreditLimitExceededException.java`. |
-| **Exception Handling (try-catch)** | `Menu.java` -> `enrollStudent()` uses a `try-catch` block. `manageFileUtilities` also uses `try-catch`. |
-| **File I/O (NIO.2)** | `ImportExportService.java` and `BackupService.java` use `java.nio.file.Path`, `Files`, and `Paths`. |
-| **Streams API (`filter`, `map`, `collect`)** | `Menu.java` -> `showGradeDistribution()` uses a stream pipeline to group and count grades. `searchCourses()` uses `filter`. |
-| **Date/Time API** | `Enrollment.java` uses `LocalDate`. `BackupService.java` uses `LocalDateTime` for timestamps. |
-| **Recursion** | `RecursiveFileUtils.java` -> `getDirectorySize()` uses `Files.walkFileTree` which is a form of recursion over a directory structure. |
+|---|---|
+| Packages | The project is broken into packages such as edu.ccrm.domain, edu.ccrm.service, etc. |
+| Loops (do-while, for-each) | Menu.java (all manage... methods employ do-while), listStudents() employs an enhanced-for loop. |
+| Decision Structures (if, switch) | Menu.java (all handleUserInput and manage... methods employ switch), ImportExportService.java employs if. |
+| Arrays & String.split | ImportExportService.java employs line.split(",") to split CSV files into a String[]. |
+| Encapsulation | All domain classes (Student, Course) encapsulate data with private data and public getters/setters. |
+| Inheritance (extends, super) | Student.java and Instructor.java extend the abstract Person.java class using super() in their constructors. |
+| Abstraction (abstract class/method) | Person.java is an abstract class with an abstract getProfile() method. |
+| Polymorphism | Student and Instructor objects are of type Person. getProfile() is a polymorphic call. |
+| Immutability (final class/fields) | Name.java and CourseCode.java are final field value classes. |
+| Static Nested Class | Course.Builder is a static nested class in Course.java. |
+| Anonymous Inner Class | Menu.java -> listStudents() uses an anonymous java.util.Comparator to sort students. |
+| Interfaces | Persistable.java and Searchable.java are interfaces that services implement. |
+| Enums with Constructors & Fields | Grade.java is an enum with a gradePoint field and a constructor. |
+| Functional Interfaces & Lambdas | Menu.java -> searchCourses() employs lambda expressions (c -> ...) to filter as predicates. |
+| Design Pattern: Singleton | AppConfig.java is designed as a Singleton. |
+| Design Pattern: Builder | Course.java has a static nested Builder class for object construction. |
+| Custom Exceptions | DuplicateEnrollmentException.java, MaxCreditLimitExceededException.java. |
+| Exception Handling (try-catch) | Menu.java -> enrollStudent() employs a try-catch block. manageFileUtilities also employs try-catch. |
+| File I/O (NIO.2) | ImportExportService.java and BackupService.java utilize java.nio.file.Path, Files, and Paths. |
+| Streams API (filter, map, collect) | Menu.java -> showGradeDistribution() employs a stream pipeline to add up and count grades. searchCourses() employs filter. |
+| Date/Time API | Enrollment.java utilizes LocalDate. BackupService.java utilizes LocalDateTime for timestamps. |
+| Recursion | RecursiveFileUtils.java -> getDirectorySize() employs Files.walkFileTree which is an example of recursion over a tree of files. |
 
 ---
 
@@ -131,15 +131,16 @@ This project was built to demonstrate a wide range of Java features. This table 
 
 ### Importing Data
 
-The `test-data` directory contains sample CSV files. To import them:
-1.  Navigate to `4. File Utilities` in the main menu.
-2.  Select `1. Import Students from CSV`.
-3.  When prompted, enter the path: `test-data/students.csv`.
-4.  Repeat for courses with `test-data/courses.csv`.
+dummy CSV files are present in the test-data directory. To import them:
+
+1.  Go to 4. File Utilities in the main menu.
+2.  Choose 1. Import Students from CSV.
+3.  When asked, type in: test-data/students.csv.
+4.  Repeat the same for courses with test-data/courses.csv.
 
 ### Enabling Assertions
 
-To run the application with assertions enabled (a technical requirement), use the `-ea` flag:
+To run the application with assertions enabled (a technical requirement), use the flag -ea:
 
 ```bash
 java -ea -cp out edu.ccrm.cli.Main

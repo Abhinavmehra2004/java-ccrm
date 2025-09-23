@@ -101,9 +101,21 @@ java -ea -cp out edu.ccrm.cli.Main
 
 ---
 
-## 3. Setup and Installation (Screenshots)
+## 📸 Screenshots
 
-*(This section contains all the screenshots from the `screenshots` folder. Please edit this section to place each image under its correct heading.)*
+### Setup & Installation
+
+**JDK Installation Verification (`java -version`):**
+
+`![Java Version](screenshots/YOUR_JAVA_VERSION_SCREENSHOT.png)`
+
+**Eclipse IDE Project Setup & Run Configuration:**
+
+`![Eclipse Setup](screenshots/YOUR_ECLIPSE_SETUP_SCREENSHOT.png)`
+
+### Program in Action
+
+*(As I cannot see the content of the images, they are all listed here. Please feel free to edit the README to move them under more specific headings!)*
 
 ### Windows Installation & Verification
 

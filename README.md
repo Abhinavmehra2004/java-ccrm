@@ -1,80 +1,58 @@
 # Campus Course & Records Manager (CCRM)
 
-## 1. Project Overview
-
-A console-based Java application to manage students, courses, enrollments, and grades for an educational institute, built as per the project statement requirements. The application demonstrates a wide range of Java SE features, from core language constructs to advanced topics like NIO.2, Design Patterns, and the Streams API.
-
-### How to Run
-
-- **JDK Version:** 17 or higher
-- **Compile:** From the `ccrm` root directory, run:
-  ```bash
-  javac -d out $(find . -name "*.java")
-  ```
-- **Run:**
-  ```bash
-  java -cp out edu.ccrm.cli.Main
-  ```
+Welcome to CCRM! This project is a comprehensive, console-based tool built with Java SE for managing students, courses, and academic records at an educational institute. It's a demonstration of modern Java development principles, showcasing everything from object-oriented design to advanced file I/O with NIO.2.
 
 ---
 
-## 2. Java Platform & Architecture
+## 🚀 Getting Started
 
-### Evolution of Java
+Ready to run the application? Here’s how.
 
-- **JDK 1.0 (1996):** The initial release of Java.
-- **J2SE 1.4 (2002):** Introduced assertions, regular expressions, and chained exceptions.
-- **Java SE 5 (2004):** A major release that introduced generics, annotations, enums, varargs, and the `java.util.concurrent` package.
-- **Java SE 8 (2014):** A landmark release featuring Lambdas, the Streams API, a new Date/Time API (java.time), and default methods in interfaces.
-- **Java SE 11 (2018):** The first Long-Term Support (LTS) release under the new six-month release cadence.
-- **Java SE 17 (2021):** The latest LTS release, bringing features like Sealed Classes and Pattern Matching for `instanceof`.
+### Prerequisites
 
-### Java ME vs SE vs EE
+- **Java Development Kit (JDK):** Version 17 or higher.
 
-| Feature      | Java ME (Micro Edition)                               | Java SE (Standard Edition)                               | Java EE (Enterprise Edition) / Jakarta EE                 |
-|--------------|-------------------------------------------------------|----------------------------------------------------------|-----------------------------------------------------------|
-| **Target**   | Mobile, embedded systems, and other small devices.    | General-purpose computing on desktops and servers.       | Large-scale, distributed, and transactional applications. |
-| **APIs**     | A subset of Java SE APIs, plus specific libraries for mobile devices. | The core Java APIs (collections, I/O, networking, etc.). | Extends Java SE with APIs for web services, servlets, messaging, etc. |
-| **Example**  | Old feature phone applications.                       | This CCRM project, Minecraft (Java Edition).             | Large banking systems, e-commerce backends.               |
+### Installation & Execution
 
-### JDK, JRE, and JVM
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Abhinavmehra2004/java-ccrm.git
+    cd java-ccrm
+    ```
 
-- **JVM (Java Virtual Machine):** The heart of the Java platform. It's an abstract machine that provides a runtime environment in which Java bytecode can be executed. It is what makes Java platform-independent ("write once, run anywhere").
-- **JRE (Java Runtime Environment):** A software package that contains everything needed to *run* a compiled Java application. It includes the JVM, the Java Class Library, and other supporting files.
-- **JDK (Java Development Kit):** A superset of the JRE. It contains everything in the JRE, plus the tools necessary to *develop* Java applications, most notably the `javac` compiler.
+2.  **Compile the code:** From the project's root directory, run the following command. This will compile all Java source files and place the `.class` files into the `out` directory.
+    ```bash
+    javac -d out $(find . -name "*.java")
+    ```
 
-![Flowchart: JDK contains JRE, which contains JVM]
+3.  **Run the application:**
+    ```bash
+    java -cp out edu.ccrm.cli.Main
+    ```
 
----
-
-## 3. Setup and Installation (Screenshots)
-
-*(This section is a placeholder for you to add your own screenshots as required.)*
-
-### Windows Installation & Verification
-
-1.  Download the JDK from the Oracle website or a vendor like Adoptium.
-2.  Run the installer.
-3.  Set the `JAVA_HOME` environment variable.
-4.  Add the JDK's `bin` directory to the `PATH` environment variable.
-
-**Verification (`java -version`):**
-
-`[YOUR SCREENSHOT HERE]`
-
-### Eclipse IDE Setup
-
-1.  Create a new Java Project.
-2.  Create packages as per the project structure (`edu.ccrm.cli`, `edu.ccrm.domain`, etc.).
-3.  Create a run configuration for the `edu.ccrm.cli.Main` class.
-
-**Eclipse Project and Run Configuration:**
-
-`[YOUR SCREENSHOTS HERE]`
+The CCRM menu will appear, and you can start exploring the features!
 
 ---
 
-## 4. Syllabus Topic to Code Mapping Table
+## ☕ About the Technology: A Java Deep Dive
+
+This project was built entirely with Java SE. Here’s a quick look at the platform and concepts that power CCRM.
+
+### The Java Platform at a Glance
+
+-   **JVM (Java Virtual Machine):** The engine that runs the compiled Java code. It’s the magic that makes Java a "write once, run anywhere" language.
+-   **JRE (Java Runtime Environment):** The full package needed to *run* Java applications. It bundles the JVM and the core Java libraries.
+-   **JDK (Java Development Kit):** The complete toolkit for *building* Java applications. It includes the JRE and developer tools like the `javac` compiler.
+
+### Java Editions: SE, EE, and ME
+
+Java comes in different flavors for different needs. This project uses **Java SE (Standard Edition)**, the foundation for desktop and server applications. The other main editions are **Java EE (Enterprise Edition)** for large-scale business applications and **Java ME (Micro Edition)** for small and embedded devices.
+
+---
+
+## 🗺️ Code Tour: Where to Find Key Concepts
+
+This project was built to demonstrate a wide range of Java features. This table serves as a map to help you find where specific concepts are implemented in the source code.
 
 | Syllabus Topic | File / Class / Method Where Demonstrated |
 |----------------|------------------------------------------|
@@ -103,17 +81,15 @@ A console-based Java application to manage students, courses, enrollments, and g
 
 ---
 
-## 5. Usage and Sample Data
+## 🛠️ Usage Notes
 
-### Sample Commands
+### Importing Data
 
--   **Import Data:** Navigate to `4. File Utilities` -> `1. Import Students from CSV` and enter `test-data/students.csv`.
--   **List Students:** Navigate to `1. Manage Students` -> `2. List Students`.
--   **Enroll:** Navigate to `3. Manage Enrollment & Grades` -> `1. Enroll Student in Course`.
-
-### Sample Data Files
-
-The `test-data` directory contains `students.csv` and `courses.csv` with sample data to import.
+The `test-data` directory contains sample CSV files. To import them:
+1.  Navigate to `4. File Utilities` in the main menu.
+2.  Select `1. Import Students from CSV`.
+3.  When prompted, enter the path: `test-data/students.csv`.
+4.  Repeat for courses with `test-data/courses.csv`.
 
 ### Enabling Assertions
 
@@ -122,3 +98,7 @@ To run the application with assertions enabled (a technical requirement), use th
 ```bash
 java -ea -cp out edu.ccrm.cli.Main
 ```
+
+---
+
+*(Note: The sections on Windows/Eclipse installation have been left as placeholders for you to add your own screenshots as required by the submission guidelines.)*

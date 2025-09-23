@@ -101,4 +101,46 @@ java -ea -cp out edu.ccrm.cli.Main
 
 ---
 
-*(Note: The sections on Windows/Eclipse installation have been left as placeholders for you to add your own screenshots as required by the submission guidelines.)*
+## 3. Setup and Installation (Screenshots)
+
+*(This section contains all the screenshots from the `screenshots` folder. Please edit this section to place each image under its correct heading.)*
+
+### Windows Installation & Verification
+
+**Verification (`java -version`):**
+
+`[YOUR SCREENSHOT FOR JAVA VERSION HERE]`
+
+### Eclipse IDE Setup
+
+**Eclipse Project and Run Configuration:**
+
+`[YOUR SCREENSHOTS FOR ECLIPSE HERE]`
+
+### Program in Action
+
+**Main Menu:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2016.59.49.png)
+
+**Student Management:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.01.02.png)
+
+**Course Management:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.03.05.png)
+
+**File Utilities:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.06.png)
+
+**Importing Data:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.20.png)
+
+**Listing Imported Data:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.32.png)
+
+**Reports Menu:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.05.36.png)
+
+**Backup Folder:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.06.21.png)
+
+

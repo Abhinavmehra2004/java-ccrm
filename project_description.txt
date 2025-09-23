@@ -1,0 +1,53 @@
+Project Title: Campus Course & Records Manager (CCRM)
+
+Detailed Project Description:
+
+The Campus Course & Records Manager (CCRM) is a robust, console-based Java SE application meticulously designed to streamline the academic administration of an educational institution. Developed with a strong emphasis on modern Java development practices, CCRM provides a comprehensive suite of tools for managing student data, course offerings, enrollment processes, and academic performance records.
+
+Core Purpose:
+CCRM serves as a centralized system for academic record-keeping, enabling efficient management of student lifecycles from enrollment to graduation, alongside the dynamic administration of course catalogs and instructor assignments. Its console-based interface ensures accessibility and ease of use for administrative tasks.
+
+Key Functional Areas:
+
+Student Management:
+Facilitates the creation, listing, updating, and deactivation of student profiles.
+Each student record includes essential details such as ID, registration number, full name, email, status, enrolled courses, and date fields managed using Java's Date/Time API.
+Supports the generation and printing of individual student profiles and academic transcripts.
+
+Course Management:
+Enables the creation, listing, updating, and deactivation of course offerings.
+Courses are defined by unique codes, titles, credit hours, assigned instructors, academic semesters, and departmental affiliations.
+Features advanced search and filtering capabilities (by instructor, department, or semester) leveraging the Java Stream API for efficient data retrieval.
+
+Enrollment & Grading:
+Manages student enrollment and unenrollment in courses, incorporating business rules such as maximum credit limits per semester to ensure academic compliance.
+Provides functionality to record marks, compute letter grades, and calculate Grade Point Averages (GPA).
+Utilizes Java enums for standardized Semester (e.g., SPRING, SUMMER, FALL) and Grade (S, A, B, ..., F with grade points) definitions.
+Generates detailed academic transcripts, demonstrating polymorphism through toString() overrides in domain classes.
+
+File Utilities (NIO.2 & Streams):
+Supports data persistence through import and export functionalities for student and course records using simple CSV-like text files, leveraging Java NIO.2 for efficient file operations.
+Includes a robust backup command that archives current data (students, courses, enrollments) into timestamped folders, utilizing java.nio.file.Path, Files, walk, copy, move, and exists for reliable data management.
+Features a recursive utility to compute and display the total size of backup directories, showcasing recursive file system traversal.
+
+CLI Workflow & Reporting:
+Presents a user-friendly, menu-driven console interface for all operations, built with switch statements and various decision/loop constructs.
+Offers reporting capabilities, including finding top-performing students based on GPA and displaying grade distributions for specific courses, utilizing Java Streams for data aggregation and analysis.
+
+Technical Highlights & Design Principles:
+
+CCRM is a testament to object-oriented programming (OOP) principles, demonstrating:
+Encapsulation: Achieved through private fields and public getter/setter methods in all domain classes.
+Inheritance: Illustrated by an abstract Person class extended by Student and Instructor subclasses.
+Abstraction: Implemented via abstract classes and methods (e.g., Person.getProfile()).
+Polymorphism: Evident in the use of base-class references to varied subtypes and virtual method invocation (e.g., getProfile() overrides).
+Immutability: Demonstrated with immutable value classes like Name and CourseCode.
+Design Patterns: Incorporates the Singleton pattern for AppConfig (ensuring a single configuration instance) and the Builder pattern for Course objects (facilitating flexible and readable object construction).
+Exception Handling: Features robust error management with custom checked exceptions (e.g., DuplicateEnrollmentException, MaxCreditLimitExceededException) and comprehensive try-catch-finally blocks.
+Modern Java APIs: Extensively utilizes the java.time Date/Time API for date management, and the java.nio.file (NIO.2) API for advanced file system operations.
+Streams & Lambdas: Leverages the Java Stream API for efficient data processing, filtering, and aggregation, alongside lambda expressions for concise functional programming constructs (e.g., comparators, predicates).
+Interfaces: Defines and implements interfaces like Persistable and Searchable to promote modularity and extensibility.
+Nested Classes: Includes examples of both static nested classes (e.g., Course.Builder) and anonymous inner classes (e.g., for sorting).
+
+Project Structure:
+The application is organized into clear, logical packages (edu.ccrm.cli, edu.ccrm.config, edu.ccrm.domain, edu.ccrm.exception, edu.ccrm.io, edu.ccrm.service, edu.ccrm.util) to maintain modularity and adherence to best practices.

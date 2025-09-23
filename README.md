@@ -4,7 +4,7 @@ Welcome to CCRM! This project is a comprehensive, console-based tool built with 
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Ready to run the application? Here’s how.
 
@@ -34,7 +34,53 @@ The CCRM menu will appear, and you can start exploring the features!
 
 ---
 
-## ☕ About the Technology: A Java Deep Dive
+## Screenshots
+
+### Setup & Installation
+
+**JDK Installation Verification (`java -version`):**
+
+*Delete the incorrect screenshot below*
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.35.09.png)
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.41.11.png)
+
+**Eclipse IDE Project Setup & Run Configuration:**
+
+*Delete the incorrect screenshot below*
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.35.09.png)
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.41.11.png)
+
+### Program in Action
+
+*(As I cannot see the content of the images, they are all listed here. Please feel free to edit the README to move them under more specific headings!)*
+
+**Main Menu:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2016.59.49.png)
+
+**Student Management:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.01.02.png)
+
+**Course Management:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.03.05.png)
+
+**File Utilities:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.06.png)
+
+**Importing Data:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.20.png)
+
+**Listing Imported Data:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.32.png)
+
+**Reports Menu:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.05.36.png)
+
+**Backup Folder:**
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.06.21.png)
+
+---
+
+## About the Technology: A Java Deep Dive
 
 This project was built entirely with Java SE. Here’s a quick look at the platform and concepts that power CCRM.
 
@@ -50,7 +96,7 @@ Java comes in different flavors for different needs. This project uses **Java SE
 
 ---
 
-## 🗺️ Code Tour: Where to Find Key Concepts
+## Code Tour: Where to Find Key Concepts
 
 This project was built to demonstrate a wide range of Java features. This table serves as a map to help you find where specific concepts are implemented in the source code.
 
@@ -81,7 +127,7 @@ This project was built to demonstrate a wide range of Java features. This table 
 
 ---
 
-## 🛠️ Usage Notes
+## Usage Notes
 
 ### Importing Data
 
@@ -98,65 +144,3 @@ To run the application with assertions enabled (a technical requirement), use th
 ```bash
 java -ea -cp out edu.ccrm.cli.Main
 ```
-
----
-
-## 📸 Screenshots
-
-### Setup & Installation
-
-**JDK Installation Verification (`java -version`):**
-
-*Delete the incorrect screenshot below*
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.35.09.png)
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.41.11.png)
-
-**Eclipse IDE Project Setup & Run Configuration:**
-
-*Delete the incorrect screenshot below*
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.35.09.png)
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.41.11.png)
-
-### Program in Action
-
-*(As I cannot see the content of the images, they are all listed here. Please feel free to edit the README to move them under more specific headings!)*
-
-### Windows Installation & Verification
-
-**Verification (`java -version`):**
-
-`[YOUR SCREENSHOT FOR JAVA VERSION HERE]`
-
-### Eclipse IDE Setup
-
-**Eclipse Project and Run Configuration:**
-
-`[YOUR SCREENSHOTS FOR ECLIPSE HERE]`
-
-### Program in Action
-
-**Main Menu:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2016.59.49.png)
-
-**Student Management:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.01.02.png)
-
-**Course Management:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.03.05.png)
-
-**File Utilities:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.06.png)
-
-**Importing Data:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.20.png)
-
-**Listing Imported Data:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.32.png)
-
-**Reports Menu:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.05.36.png)
-
-**Backup Folder:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.06.21.png)
-
-

@@ -107,11 +107,15 @@ java -ea -cp out edu.ccrm.cli.Main
 
 **JDK Installation Verification (`java -version`):**
 
-`![Java Version](screenshots/YOUR_JAVA_VERSION_SCREENSHOT.png)`
+*Delete the incorrect screenshot below*
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.35.09.png)
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.41.11.png)
 
 **Eclipse IDE Project Setup & Run Configuration:**
 
-`![Eclipse Setup](screenshots/YOUR_ECLIPSE_SETUP_SCREENSHOT.png)`
+*Delete the incorrect screenshot below*
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.35.09.png)
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.41.11.png)
 
 ### Program in Action
 

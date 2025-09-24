@@ -40,15 +40,15 @@ The CCRM menu will show up, and you can begin to explore the features!
 
 **JDK Installation Verification (java -version):**
 
+![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.41.11.png)
 
 
-![Screenshot](screenshots/Screenshot%2025-09-23%20at%2017.41.11.png)
 
 **Eclipse IDE Project Setup & Run Configuration:**
 
-*Delete the incorrect screenshot below*
+
 ![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.35.09.png)
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.41.11.png)
+
 
 ### Program in Action
 

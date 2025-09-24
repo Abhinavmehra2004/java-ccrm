@@ -50,33 +50,7 @@ The CCRM menu will show up, and you can begin to explore the features!
 ![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.35.09.png)
 
 
-### Program in Action
 
-*(As I cannot see the content of the images, they are all listed here. Please feel free to edit the README to move them under more specific headings!)*
-
-**Main Menu:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2016.59.49.png)
-
-**Student Management:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.01.02.png)
-
-**Course Management:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.03.05.png)
-
-**File Utilities:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.06.png)
-
-**Importing Data:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.20.png)
-
-**Listing Imported Data:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.04.32.png)
-
-**Reports Menu:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.05.36.png)
-
-**Backup Folder:**
-![Screenshot](screenshots/Screenshot%202025-09-23%20at%2017.06.21.png)
 
 ---
 
